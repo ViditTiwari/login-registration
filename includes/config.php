@@ -4,9 +4,9 @@ session_start();
 
 //database credentials
 define('DBHOST','localhost');
-define('DBUSER','database username');
-define('DBPASS','password');
-define('DBNAME','database name');
+define('DBUSER','root');
+define('DBPASS','');
+define('DBNAME','demo');
 
 //application address
 define('DIR','http://domain.com/');
@@ -24,4 +24,7 @@ try {
     exit;
 }
 
+//include the user class, pass in the database connection
+include('classes/user.php');
+$user = new User($db); 
 ?>
