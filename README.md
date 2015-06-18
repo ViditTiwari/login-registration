@@ -1,0 +1,1 @@
+A login system with registration via Email, Google Plus, Facebook. On registering via email, an activation link will be emailed with a link to activate the account. Upon activating the account, user can login, option to reset password is available to the user.
