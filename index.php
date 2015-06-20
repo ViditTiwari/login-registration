@@ -126,11 +126,11 @@ require('layout/header.php');
                                     ?>
                                 <p> 
                                     <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                                    <input id="username" name="username" required="required" type="text" placeholder="mysuperusername690" />
+                                    <input id="username" name="username" required="required" type="text" placeholder="mysuperusername690" value="<?php if(isset($error)){ echo $_POST['username']; } ?>" />
                                 </p>
                                 <p> 
                                     <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
-                                    <input id="email" name="email" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                    <input id="email" name="email" required="required" type="email" placeholder="mysupermail@mail.com" value="<?php if(isset($error)){ echo $_POST['email']; } ?>"/> 
                                 </p>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
