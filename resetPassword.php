@@ -95,7 +95,7 @@ require('layout/header.php');
 													echo '<p class="bg-danger">'.$error.'</p>';
 												}
 											}
-
+											if(isset($_GET['action'])){
 											//check the action
 											switch ($_GET['action']) {
 												case 'active':
@@ -105,6 +105,7 @@ require('layout/header.php');
 													echo "<h2 class='bg-success'>Please check your inbox for a reset link.</h2>";
 													break;
 											}
+										}
 											?>
                                 
                                 <p> 
